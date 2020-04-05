@@ -12,4 +12,6 @@ def fetch_words():
     for word in story_words:
         print(word)
 
-
+# execute if not imported into module
+if __name__ == "__main__":
+    fetch_words()
