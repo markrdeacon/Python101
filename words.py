@@ -1,9 +1,9 @@
+#! /usr/bin/env python
 """Retrieve and print strings from a url
 
 Usage:
     python words.py <url>
 """
-#! /usr/bin/env python
 import sys
 from urllib.request import urlopen
 
