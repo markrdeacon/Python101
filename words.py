@@ -8,10 +8,16 @@ def fetch_words():
         for word in line_words:
             story_words.append(word)
     story.close()
+    return story_words
 
-    for word in story_words:
+def print_words(words):
+    for word in words:
         print(word)
+
+def main():
+    words = fetch_words()
+    print_words(words)
 
 # execute if not imported into module
 if __name__ == "__main__":
-    fetch_words()
+    main()
