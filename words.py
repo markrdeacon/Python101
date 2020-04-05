@@ -3,6 +3,7 @@
 Usage:
     python words.py <url>
 """
+#! /usr/bin/env python
 import sys
 from urllib.request import urlopen
 
@@ -44,5 +45,5 @@ def main(url):
 
 # execute if not imported into module
 if __name__ == "__main__":
-    url = sys.argv[1]
+    url = sys.argv[1] # the 0th arg is the module name
     main(url)
