@@ -10,13 +10,13 @@ def fetch_words():
     story.close()
     return story_words
 
-def print_words(words):
-    for word in words:
-        print(word)
+def print_items(items):
+    for item in items:
+        print(item)
 
 def main():
     words = fetch_words()
-    print_words(words)
+    print_items(words)
 
 # execute if not imported into module
 if __name__ == "__main__":
