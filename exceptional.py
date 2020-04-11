@@ -14,12 +14,11 @@ DIGIT_MAP = {
 
 def convert(s):
     '''Converts a string representation of a set of digits to a number'''
-    x = -1
     try:
         number = ''
         for token in s:
             number += DIGIT_MAP[token]
-        x = int(number)
+        return int(number)
     except (KeyError, TypeError):
         pass
-    return x
+    return -1
