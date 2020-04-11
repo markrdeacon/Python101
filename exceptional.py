@@ -13,16 +13,13 @@ DIGIT_MAP = {
 
 
 def convert(s):
+    x = -1
     try:
         number = ''
         for token in s:
             number += DIGIT_MAP[token]
         x = int(number)
         print(f'conversion succeeded: x = {x}')
-    except KeyError:
-        x = -1
-        print(f'conversion failed')
-    except TypeError:
-        x = -1
+    except (KeyError, TypeError):
         print(f'conversion failed')
     return x
